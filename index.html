@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مساعد الذكاء الاصطناعي - المنهج الفرنسي</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- الرأس -->
+        <header class="header">
+            <div class="header-content">
+                <h1>🤖 مساعد الذكاء الاصطناعي</h1>
+                <p>دردشة ذكية مع مراجع حديثة بناءً على المنهج الفرنسي</p>
+            </div>
+        </header>
+
+        <!-- المحتوى الرئيسي -->
+        <main class="main-content">
+            <div class="chat-container">
+                <!-- منطقة الرسائل -->
+                <div class="messages" id="messagesContainer">
+                    <div class="message bot-message">
+                        <div class="message-content">
+                            <p>مرحباً! 👋 أنا مساعدك الذكي. يمكنك سؤالي عن أي موضوع يتعلق بالمنهج الفرنسي.</p>
+                            <p style="font-size: 0.9em; margin-top: 10px; opacity: 0.7;">مثلاً: ما هو المنهج الفرنسي في الرياضيات؟</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- منطقة الإدخال -->
+                <div class="input-area">
+                    <div class="input-wrapper">
+                        <input 
+                            type="text" 
+                            id="userInput" 
+                            placeholder="اكتب سؤالك هنا..."
+                            class="message-input"
+                        >
+                        <button id="sendBtn" class="send-button">
+                            <span>إرسال</span>
+                        </button>
+                    </div>
+                    <div class="hint">اضغط Enter أو انقر على زر الإرسال</div>
+                </div>
+            </div>
+
+            <!-- منطقة المراجع -->
+            <aside class="references-panel">
+                <h3>📚 المراجع والمصادر</h3>
+                <div id="referencesContainer" class="references-list">
+                    <p class="empty-text">سيتم عرض المراجع هنا</p>
+                </div>
+            </aside>
+        </main>
+
+        <!-- التذييل -->
+        <footer class="footer">
+            <p>صُنع بـ ❤️ بناءً على المنهج الفرنسي | تطبيق ذكاء اصطناعي 🇫🇷</p>
+        </footer>
+    </div>
+
+    <!-- مؤشر التحميل -->
+    <div id="loadingIndicator" class="loading-indicator" style="display: none;">
+        <div class="spinner"></div>
+        <p>جاري المعالجة...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
